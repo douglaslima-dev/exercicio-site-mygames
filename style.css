@@ -1,0 +1,226 @@
+:root {
+    --color1: #0100DB;
+    --color2: #1F6BFF;
+    --color3: #4900DB;
+    --color4: #BF21F9;
+    --color5: #8400FF;
+    --color6: #131313;
+    --color7: #f3f3f3;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: 0;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", serif;
+}
+
+body {
+    background-image: linear-gradient(#0000db1a, #bf21f913, #8400ff18);
+    height: 100vh;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #1F6BFF, #BF21F9)
+
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 2rem;
+}
+
+.header .logo img {
+    width: 300px;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    background: linear-gradient(to bottom ,#1F6BFF, #BF21F9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 0.1rem solid #BF21F9;
+    padding-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.icons img {
+    margin: 0.4rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 45px;
+    height: 45px;
+}
+
+.home-container {
+    background-color: var(--color3);
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.home-content {
+padding: 0px 40px 0px 0px;
+}
+
+.home-content h3 {
+    color: var(--color7);
+    font-size: 3rem;
+}
+
+.home-content span {
+    font-family: "Shadows Into Light", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4rem;
+    color: #BF21F9;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.068);
+}
+
+.home-content p {
+    color: var(--color7);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: 1rem 0;
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.home-image img {
+    max-width:500px;
+    box-shadow: 4px 3px 5px rgba(255, 255, 255, 0.452);
+}
+
+#game-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color2);
+    max-width: 1200px;
+    height: auto;
+    padding: 40px;
+}
+
+#game-list p{
+    color: var(--color7);
+    font-size: 3rem;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.219);
+    padding-bottom: 16px;
+}
+
+#game-list .list img{
+    width: 345px;
+    height: 215px;
+}
+
+#contact {
+    padding: 40px;
+}
+
+#contact .contact-links {
+    display: block;
+    
+}
+
+#contact .contact-links h3 {
+    color: var(--color7);
+    font-size: 3rem;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.219);
+    margin-bottom: 16px;
+}
+
+#contact .contact-links h4 {
+    color: var(--color7);
+    font-size: 2.3rem;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.219);
+    margin-bottom: 16px;
+}
+
+.contact-methodes {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+button {
+    display: block;
+    width: 330px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-family: "Roboto", serif;
+    border: 0.1rem solid var(--color6);
+}
+
+form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+form button {
+    font-family: "Shadows Into Light", serif;
+    font-weight: 800;
+    font-size: 3.3rem;
+    color: #BF21F9;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: var(--color7);
+    background-color: var(--color4);
+}
+
+input:focus, textarea:focus {
+    outline-color: #8400FF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-top: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #1F6BFF, #BF21F9);
+    padding: 16px 0;
+    font-size: 1.5rem;
+}
